@@ -33,19 +33,22 @@ const app = new Vue({
     },
     methods: {
         clickUp(){
-            console.log('ciao');  
+           // console.log('ciao'); 
+          this.counter--; 
+           if (this.counter < 0){
+               this.counter= 4;
+           }
         },
         clickDown(){
-            
-                console.log('ciao');
-
-
-            
-
+           // console.log('ciao');
+           this.counter++;
+           if (this.counter == 4){
+            this.counter = 0;
+    
         }
 
+      }
     }
-
 })
 
 
