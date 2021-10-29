@@ -11,7 +11,7 @@
 .selectedImage {
     width: 800px;
     height: 580px;
-    margin-top:6rem;
+    margin-top:3rem;
     position: relative;
    
 
@@ -29,9 +29,10 @@
 
 }
 .listImage {
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .titolo {   
     position: absolute;
@@ -56,4 +57,25 @@
     width: 100%;
     font-size: 15px;
     text-align: right;
+}
+.frecciaup{
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    z-index: 3;
+    background-color: rgba(204, 204, 204, 1);
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+.frecciadown {
+    position: absolute;
+    top: 109%;
+    left: 71%;
+    float: left;
+    z-index: 3;
+    -webkit-transform: translateY(-100%) translateX(-50%);
+    background-color: rgba(204, 204, 204, 1);
+    border-radius: 20px;
+    padding: 5px;
 }

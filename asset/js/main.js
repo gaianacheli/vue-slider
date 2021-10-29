@@ -30,6 +30,20 @@ const app = new Vue({
             },
         ],
         
+    },
+    methods: {
+        clickUp(){
+            console.log('ciao');  
+        },
+        clickDown(){
+            
+                console.log('ciao');
+
+
+            
+
+        }
+
     }
 
 })
