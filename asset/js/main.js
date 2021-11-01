@@ -29,12 +29,13 @@ const app = new Vue({
                 text:  'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
             },
         ],
-        
+        timer:"",
     },
     methods: {
         clickUp(){
            // console.log('ciao'); 
           this.counter--; 
+          
            if (this.counter < 0){
                this.counter= 4;
            }
@@ -47,11 +48,18 @@ const app = new Vue({
     
         }
 
+      },
+      autoPlay(){
+        this.timer =  setInterval(()=>{
+              this.clickDown(); {
+         }}, 3000);
+      },
+     
+    
       }
-    }
+     
+    
 })
-
-
 
 
 

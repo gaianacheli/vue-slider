@@ -13,14 +13,14 @@
         <div class="cointeiner">
             <i @click="clickUp" class="fas fa-chevron-up frecciaup" ></i>
             <i @click="clickDown" class="fas fa-chevron-down frecciadown"></i>
-            <div class="selectedImage">
-                <img class="imgone " :src="slides[counter].image" alt="">
+            <div @mouseleave="autoPlay()" class="selectedImage">
+                <img class="imgone" :src="slides[counter].image" alt="">
                 <h2 class="titolo" >{{slides[counter].title}}</h2>
                 <p class="sottotitolo">{{slides[counter].text}}</p>
             </div>
-            <div class="listImage">
-                <div class="images" v-for="slide in slides">
-                   <img class="imgstyle" :src="slide.image" alt="">
+            <div class="listImage ">
+                <div  class="images" v-bind:autoplay="true" v-bind:loop="true" v-for="slide in slides">
+                   <img class="imgstyle unselectedImg" :src="slide.image" alt="">
                 </div>
             </div>
         
