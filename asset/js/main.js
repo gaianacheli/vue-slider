@@ -47,7 +47,7 @@ const app = new Vue({
                this.counter= 4;
            }
 
-          this.slides[thiscounter].class="images selected"
+          this.slides[this.counter].class="images selected"
         },
         clickDown(){
             this.slides[this.counter].class="images"

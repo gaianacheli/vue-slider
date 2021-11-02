@@ -85,5 +85,6 @@
 }
 .selected {
     border: 10px solid white;
+    filter: brightness(2);
     overflow: hidden;
 }
