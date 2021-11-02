@@ -20,7 +20,7 @@
                 <i @click="clickUp" class="fas fa-chevron-up frecciaup" ></i>
                 <i @click="clickDown" class="fas fa-chevron-down frecciadown"></i>
                 <ul>
-                    <li  class="images" v-bind:autoplay="true" v-bind:loop="true" v-for="slide in slides">
+                    <li  v-bind:autoplay="true" v-bind:loop="true" v-for="slide in slides" :class="slide.class">
                         <img class="imgstyle unselectedImg" :src="slide.image" alt=""></li>
                 </ul>
                 
