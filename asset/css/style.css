@@ -10,7 +10,7 @@
 }
 .selectedImage {
     width: 800px;
-    height: 580px;
+    height: 565px;
     margin-top:3rem;
     position: relative;
    
@@ -18,7 +18,7 @@
 }
 .imgone {
     width: 800px;
-    height: 580px;
+    height: 565px;
 }
 .imgstyle {
     width: 280px;
@@ -26,14 +26,16 @@
     position:relative;
     overflow:hidden;
 }
-.list {
+.images{
     list-style: none;
+    height: 113px;
 
 }
 .listImage {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .titolo {   
     position: absolute;
@@ -61,8 +63,8 @@
 }
 .frecciaup{
     position: absolute;
-    left: 80%;
-    top: 10%;
+    left: 46%;
+    top: 1%;
     z-index: 3;
     background-color: rgba(204, 204, 204, 1);
     border-radius: 20px;
@@ -71,17 +73,15 @@
 }
 .frecciadown {
     position: absolute;
-    top: 98%;
-    left: 80%;
-    float: left;
+    top: 93%;
+    left: 46%;
     z-index: 3;
-    -webkit-transform: translateY(-100%) translateX(-50%);
     background-color: rgba(204, 204, 204, 1);
     border-radius: 20px;
     padding: 5px;
 }
 .unselectedImg{
-    filter: opacity(0.5);
+    filter: brightness(0.5);
 }
 .selected {
     border: 7px solid white;
